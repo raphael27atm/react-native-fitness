@@ -1,7 +1,13 @@
 import React from 'react'
 import { View } from 'react-native'
 import { FontAwesome, MaterialIcons, MaterialCommunityIcons } from '@expo/vector-icons'
-import { white, pink } from './colors'
+import { white } from './colors'
+
+export function getDailyReminderValue () {
+  return {
+    today: "👋 Don't forget to log your data today!"
+  }
+}
 
 export function getMetricMetaInfo (metric) {
   const info = {
@@ -34,7 +40,7 @@ export function getMetricMetaInfo (metric) {
           <View>
             <MaterialCommunityIcons
               name='bike'
-              color={pink}
+              color={white}
               size={32}
             />
           </View>
